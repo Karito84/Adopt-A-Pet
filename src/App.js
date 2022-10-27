@@ -17,6 +17,7 @@ function App() {
        {/* <Route path="/" element={<HomePage />} />
       <Route path="/:type" element={<HomePage />} /> */}
     </Route>
+    <Route path=":type/:id" element={<PetDetailsPage />}/>
      
       </Routes>
     </BrowserRouter>
