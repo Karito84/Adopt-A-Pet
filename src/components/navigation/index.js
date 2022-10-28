@@ -38,7 +38,7 @@ const Navigation = () => {
               <li key={type.name}>
                 {/* These links should have an activeClassName prop */}
                 <NavLink
-                  to={type.name}
+                  to={type.name.toLowerCase()}
                   key={type.name}
                   className="nav-link"
                 >
