@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { getPets } from '../../api/petfinder';
 import Hero from '../../components/hero';
 import Pet from '../../components/pet';
-import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+
 
 const HomePage = () => {
   const [data, setData] = useState(null);
@@ -35,7 +35,7 @@ const HomePage = () => {
           {data.map((animal) => (
             <Link // Change me to a Link!
               key={animal.id}
-              to={`${animal.id}`} // changed path to relative path
+              to={`/${animal.type.toLowerCase()}/${animal.id}`} 
               className="pet"
             >
               <article>
