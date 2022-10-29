@@ -1,13 +1,13 @@
 import React from 'react';
-
-// import useHistory here.
+import { useNavigate } from 'react-router-dom';
+// import useNavigate-v6 instead useHistory -v5
 
 const PetDetailsNotFound = () => {
-
+const navigate = useNavigate();
   // get the history object from useHistory()
 
   const goBack = () => {
-    // Go back!
+    navigate(-2);
   }
   
   return (
