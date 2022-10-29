@@ -19,7 +19,7 @@ function App() {
     </Route>
     <Route path=":type/:id" element={<PetDetailsPage />}/>
     <Route path="/search" element={<SearchPage />}></Route>
-     
+    <Route path="pet-details-not-found" element={<PetDetailsNotFound/> } />
       </Routes>
     </BrowserRouter>
   );
